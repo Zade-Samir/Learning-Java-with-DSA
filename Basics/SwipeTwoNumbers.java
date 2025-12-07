@@ -1,3 +1,4 @@
+package Basics;
 public class SwipeTwoNumbers {
 
     public static void main(String[] args) {
