@@ -15,7 +15,7 @@ Constraints:
 -109 <= nums [i|<= 10º
 */
 
-package Arrays;
+package Arrays.Questions;
 
 public class ElementAppreanceMoreThanTwice {
 
