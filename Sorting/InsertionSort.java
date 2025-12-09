@@ -12,7 +12,7 @@ public class InsertionSort {
             int prev = i - 1;
 
             //swap if prev is bigger
-            while (prev >= 0 && arr[prev] < curr) {
+            while (prev >= 0 && arr[prev] > curr) {
                 arr[prev + 1] = arr[prev];
                 prev--;
             }

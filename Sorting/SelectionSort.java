@@ -9,7 +9,7 @@ public class SelectionSort {
             int minPosition = i;
             //loop through inner from i + 1
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[minPosition] < arr[j]) {
+                if (arr[minPosition] > arr[j]) {
                     minPosition = j;
                 }
             }

@@ -17,7 +17,23 @@ Constraints:
 
 package Arrays.Questions;
 
+import java.util.HashSet;
+
 public class ElementAppreanceMoreThanTwice {
+
+    //another approach
+    public static boolean isDuplicate(int nums[]) {
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int num : nums) {
+            if (set.contains(num)) {
+                return true;
+            }
+            set.add(num);
+        }
+
+        return false;
+    }
 
     public static boolean isDuplicateElement(int arr[]) {
 
@@ -50,7 +66,7 @@ public class ElementAppreanceMoreThanTwice {
 
     public static void main(String[] args) {
         int arr[] = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
-        System.out.println(isDuplicateElement(arr));
+        System.out.println(isDuplicate(arr));
     }
     
 }
